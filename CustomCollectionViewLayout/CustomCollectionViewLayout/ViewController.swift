@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController
 {
     private var collectionView: UICollectionView!
-    
+
     let colors: [UIColor] = [.systemBlue, .orange, .purple]
     
     override func viewDidLoad()
@@ -59,7 +59,7 @@ class ViewController: UIViewController
         collectionView.heightAnchor
             .constraint(equalToConstant: 300).isActive = true
     }
-    
+
     private func createLayout() -> HorizontalLayout
     {
         let customLayout = HorizontalLayout()
@@ -98,16 +98,12 @@ extension ViewController: UICollectionViewDataSource
         return cell
     }
     
-    
-    
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         referenceSizeForHeaderInSection section: Int) -> CGSize
     {
         return CGSize(width: 200, height: 50)
     }
-    
-    
 }
 
 extension ViewController: UICollectionViewDelegate
@@ -125,7 +121,5 @@ extension ViewController: UICollectionViewDelegate
         
         return header
     }
-    
-    
 }
 

@@ -29,13 +29,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="cTr-Nb-24q">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="cTr-Nb-24q">
                                 <rect key="frame" x="130.33333333333337" y="689" width="248.66666666666663" height="31"/>
                                 <connections>
                                     <action selector="columnSliderDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="v4k-zA-OGg"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="Fl5-bc-EaQ">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="Fl5-bc-EaQ">
                                 <rect key="frame" x="131" y="768" width="248" height="31"/>
                                 <connections>
                                     <action selector="rowSliderDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Bpf-l6-WHB"/>

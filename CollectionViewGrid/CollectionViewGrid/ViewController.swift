@@ -10,28 +10,41 @@ import UIKit
 class ViewController: UIViewController {
 
     private let minColumnCount = 1
-    private let maxColumnCount = 5
+    private let maxColumnCount = 4
     
     private let minRowCount = 1
-    private let maxRowCount = 5
+    private let maxRowCount = 4
     
     private let cellSpacing: CGFloat = 1
     
-    private var currentColumnCount = 1
-    private var currentRowCount = 1
+    private var currentColumnCount = 1 {
+        willSet {
+            collectionView.reloadData()
+        }
+    }
+    private var currentRowCount = 1 {
+        willSet {
+            collectionView.reloadData()
+        }
+    }
     
     // We only want the slider value to reflect whole numbers
+    // https://stackoverflow.com/a/6372184/1619193
     private let step: Float = 1
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBAction func columnSliderDidChange(_ sender: UISlider) {
-        currentColumnCount = Int(round(sender.value / step) * step)
+        let newStep = roundf((sender.value) / step);
+        currentColumnCount = Int(newStep * step)
+        sender.value = newStep * step
     }
     
     
     @IBAction func rowSliderDidChange(_ sender: UISlider) {
-        currentRowCount = Int(round(sender.value / step) * step)
+        let newStep = roundf((sender.value) / step);
+        currentRowCount = Int(newStep * step)
+        sender.value = newStep * step
     }
     
     private func getCellSize() -> CGSize {

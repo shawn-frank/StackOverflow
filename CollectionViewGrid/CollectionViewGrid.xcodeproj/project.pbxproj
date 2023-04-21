@@ -14,6 +14,7 @@
 		2BCF133529ED284A00B8DA54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BCF133429ED284A00B8DA54 /* Assets.xcassets */; };
 		2BCF133829ED284A00B8DA54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BCF133629ED284A00B8DA54 /* LaunchScreen.storyboard */; };
 		2BCF134029F231FF00B8DA54 /* CVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF133F29F231FF00B8DA54 /* CVCell.swift */; };
+		2BCF134229F25CDD00B8DA54 /* NotificationNameConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF134129F25CDD00B8DA54 /* NotificationNameConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2BCF133729ED284A00B8DA54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BCF133929ED284A00B8DA54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BCF133F29F231FF00B8DA54 /* CVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCell.swift; sourceTree = "<group>"; };
+		2BCF134129F25CDD00B8DA54 /* NotificationNameConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				2BCF132B29ED284900B8DA54 /* AppDelegate.swift */,
+				2BCF134129F25CDD00B8DA54 /* NotificationNameConstants.swift */,
 				2BCF132D29ED284900B8DA54 /* SceneDelegate.swift */,
 				2BCF133F29F231FF00B8DA54 /* CVCell.swift */,
 				2BCF132F29ED284900B8DA54 /* ViewController.swift */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BCF134229F25CDD00B8DA54 /* NotificationNameConstants.swift in Sources */,
 				2BCF134029F231FF00B8DA54 /* CVCell.swift in Sources */,
 				2BCF133029ED284900B8DA54 /* ViewController.swift in Sources */,
 				2BCF132C29ED284900B8DA54 /* AppDelegate.swift in Sources */,

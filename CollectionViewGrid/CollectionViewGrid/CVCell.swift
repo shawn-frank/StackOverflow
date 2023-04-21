@@ -13,6 +13,7 @@ class CVCell: UICollectionViewCell {
     @IBOutlet weak var cellButton: UIButton!
     
     @IBAction func cellButtonTapped(_ sender: UIButton) {
-        print("tapped button: \(sender.titleLabel?.text ?? "")")
+        NotificationCenter.default.post(name: .collectionViewButtonTapNotificationName,
+                                        object: sender.titleLabel?.text ?? "")
     }
 }

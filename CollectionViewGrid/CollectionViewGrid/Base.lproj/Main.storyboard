@@ -17,26 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rows" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q23-jc-5Ss">
-                                <rect key="frame" x="16" y="769" width="57" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rows: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q23-jc-5Ss">
+                                <rect key="frame" x="16" y="769" width="79" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Columns" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1f-jo-8E4">
-                                <rect key="frame" x="16" y="690" width="92" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Columns: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1f-jo-8E4">
+                                <rect key="frame" x="16" y="690" width="114" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="cTr-Nb-24q">
-                                <rect key="frame" x="130.33333333333337" y="689" width="248.66666666666663" height="31"/>
+                                <rect key="frame" x="152.33333333333337" y="689" width="226.66666666666663" height="31"/>
                                 <connections>
                                     <action selector="columnSliderDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="v4k-zA-OGg"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="Fl5-bc-EaQ">
-                                <rect key="frame" x="131" y="768" width="248" height="31"/>
+                                <rect key="frame" x="153" y="768" width="226" height="31"/>
                                 <connections>
                                     <action selector="rowSliderDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Bpf-l6-WHB"/>
                                 </connections>
@@ -115,7 +115,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonTappedLabel" destination="mUj-62-btc" id="Rwb-i9-vzO"/>
                         <outlet property="collectionView" destination="43d-ys-zUS" id="RoJ-Fg-N4n"/>
+                        <outlet property="currentColumnsLabel" destination="N1f-jo-8E4" id="48H-Ba-7oj"/>
+                        <outlet property="currentRowsLabel" destination="q23-jc-5Ss" id="dEh-Z0-ris"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

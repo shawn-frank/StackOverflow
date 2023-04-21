@@ -68,7 +68,7 @@ class ViewController: UIViewController {
     
     @objc private func didTapCVCellButton(_ notification: Notification) {
         if let buttonLabel = notification.object as? String {
-            buttonTappedLabel.text = "Button \(buttonLabel) tapped"
+            buttonTappedLabel.text = "\(buttonLabel) tapped"
         }
     }
     
